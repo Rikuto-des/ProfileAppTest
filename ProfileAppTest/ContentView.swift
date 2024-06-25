@@ -38,6 +38,12 @@ struct ContentView: View {
                 
                 List(multipeerManager.receivedProfiles) { profile in
                     VStack(alignment: .leading) {
+                        if let imageData = profile.imageData, let uiImage = UIImage(data: imageData) {
+                            Image(uiImage: uiImage)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(height: 100)
+                        }
                         Text(profile.name).font(.headline)
                         Text(profile.bio).font(.subheadline)
                         ForEach(profile.interests, id: \.self) { interest in
@@ -51,11 +57,5 @@ struct ContentView: View {
                 ProfileEditView(multipeerManager: multipeerManager)
             }
         }
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
     }
 }
