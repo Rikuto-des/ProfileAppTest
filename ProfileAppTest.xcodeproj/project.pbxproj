@@ -11,6 +11,9 @@
 		CE09FB8D2C2B045B00830DEC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE09FB8C2C2B045B00830DEC /* ContentView.swift */; };
 		CE09FB8F2C2B045C00830DEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE09FB8E2C2B045C00830DEC /* Assets.xcassets */; };
 		CE09FB922C2B045C00830DEC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE09FB912C2B045C00830DEC /* Preview Assets.xcassets */; };
+		CE09FB992C2B04E600830DEC /* ProfileEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE09FB982C2B04E600830DEC /* ProfileEditView.swift */; };
+		CE09FB9B2C2B050900830DEC /* MultipeerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE09FB9A2C2B050900830DEC /* MultipeerManager.swift */; };
+		CE09FB9D2C2B052300830DEC /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE09FB9C2C2B052300830DEC /* Profile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,11 @@
 		CE09FB8C2C2B045B00830DEC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CE09FB8E2C2B045C00830DEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE09FB912C2B045C00830DEC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CE09FB982C2B04E600830DEC /* ProfileEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditView.swift; sourceTree = "<group>"; };
+		CE09FB9A2C2B050900830DEC /* MultipeerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipeerManager.swift; sourceTree = "<group>"; };
+		CE09FB9C2C2B052300830DEC /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		CE09FB9E2C2B05A200830DEC /* ProfileAppTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ProfileAppTest.entitlements; sourceTree = "<group>"; };
+		CE09FB9F2C2B05B100830DEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,13 @@
 		CE09FB892C2B045B00830DEC /* ProfileAppTest */ = {
 			isa = PBXGroup;
 			children = (
+				CE09FB9F2C2B05B100830DEC /* Info.plist */,
+				CE09FB9E2C2B05A200830DEC /* ProfileAppTest.entitlements */,
 				CE09FB8A2C2B045B00830DEC /* ProfileAppTestApp.swift */,
 				CE09FB8C2C2B045B00830DEC /* ContentView.swift */,
+				CE09FB982C2B04E600830DEC /* ProfileEditView.swift */,
+				CE09FB9A2C2B050900830DEC /* MultipeerManager.swift */,
+				CE09FB9C2C2B052300830DEC /* Profile.swift */,
 				CE09FB8E2C2B045C00830DEC /* Assets.xcassets */,
 				CE09FB902C2B045C00830DEC /* Preview Content */,
 			);
@@ -138,6 +151,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE09FB8D2C2B045B00830DEC /* ContentView.swift in Sources */,
+				CE09FB9D2C2B052300830DEC /* Profile.swift in Sources */,
+				CE09FB9B2C2B050900830DEC /* MultipeerManager.swift in Sources */,
+				CE09FB992C2B04E600830DEC /* ProfileEditView.swift in Sources */,
 				CE09FB8B2C2B045B00830DEC /* ProfileAppTestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,12 +285,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ProfileAppTest/ProfileAppTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ProfileAppTest/Preview Content\"";
 				DEVELOPMENT_TEAM = N2TW4R972L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ProfileAppTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -298,12 +316,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ProfileAppTest/ProfileAppTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ProfileAppTest/Preview Content\"";
 				DEVELOPMENT_TEAM = N2TW4R972L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ProfileAppTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
